@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "activities",
+  "info": {
+    "name": "activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "total_sessions": {
+      "type": "integer",
+      "default": 0
+    },
+    "mindful_minute": {
+      "type": "decimal",
+      "default": 0
+    },
+    "longest_streak": {
+      "type": "decimal",
+      "default": 0
+    },
+    "insight_user_id": {
+      "via": "activity_id",
+      "model": "insight-user"
+    }
+  }
+}

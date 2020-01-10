@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "reminders",
+  "info": {
+    "name": "reminder"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "is_actived": {
+      "type": "boolean",
+      "default": true
+    },
+    "insight_user_id": {
+      "model": "insight-user"
+    },
+    "time": {
+      "type": "decimal"
+    }
+  }
+}

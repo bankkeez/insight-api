@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/insight-users",
+      "handler": "insight-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/insight-users/count",
+      "handler": "insight-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/insight-users/:id",
+      "handler": "insight-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/insight-users",
+      "handler": "insight-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/insight-users/:id",
+      "handler": "insight-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/insight-users/:id",
+      "handler": "insight-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

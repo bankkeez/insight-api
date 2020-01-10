@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "venues",
+  "info": {
+    "name": "Venue"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "richtext",
+      "private": false,
+      "required": true
+    },
+    "detail": {
+      "type": "richtext",
+      "required": true
+    },
+    "phone_number": {
+      "required": true,
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "is_available": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "ratings": {
+      "type": "decimal",
+      "default": 0
+    },
+    "weight": {
+      "type": "decimal",
+      "required": true
+    },
+    "owner_user_id": {
+      "model": "insight-user"
+    },
+    "booking_user_id": {
+      "model": "insight-user"
+    },
+    "events": {
+      "collection": "event"
+    }
+  }
+}

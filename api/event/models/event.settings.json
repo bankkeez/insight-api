@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "events",
+  "info": {
+    "name": "Event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "time"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "max_participant": {
+      "type": "integer",
+      "required": true
+    },
+    "current_participant": {
+      "type": "integer"
+    },
+    "venue_id": {
+      "model": "venue"
+    }
+  }
+}
