@@ -579,7 +579,12 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "firstname",
+                "lastname",
+                "phone_number",
+                "date_of_birth",
+                "priority"
               ],
               "properties": {
                 "id": {
@@ -607,6 +612,45 @@
                   "type": "boolean"
                 },
                 "role": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "phone_number": {
+                  "type": "integer"
+                },
+                "date_of_birth": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "is_receiving_news": {
+                  "type": "boolean"
+                },
+                "priority": {
+                  "type": "integer"
+                },
+                "reminders": {
+                  "type": "string"
+                },
+                "user_tags": {
+                  "type": "string"
+                },
+                "activities": {
+                  "type": "string"
+                },
+                "venues": {
+                  "type": "string"
+                },
+                "profile_picture": {
+                  "type": "string"
+                },
+                "join_courses": {
                   "type": "string"
                 }
               }

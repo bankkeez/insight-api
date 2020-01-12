@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "join_courses",
+  "info": {
+    "name": "joinCourse"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "course_id": {
+      "model": "course"
+    }
+  }
+}

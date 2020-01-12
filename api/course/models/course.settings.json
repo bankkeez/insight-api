@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "courses",
+  "info": {
+    "name": "course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "decimal",
+      "required": true
+    },
+    "phone_number": {
+      "type": "integer",
+      "required": true
+    },
+    "pictures": {
+      "collection": "picture"
+    },
+    "cover_pictures": {
+      "collection": "picture"
+    },
+    "sessions": {
+      "collection": "session"
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "join_courses": {
+      "collection": "join-course"
+    },
+    "venue_courses": {
+      "collection": "venue-course"
+    }
+  }
+}

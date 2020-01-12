@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "venues",
   "info": {
-    "name": "Venue"
+    "name": "venue"
   },
   "options": {
     "increments": true,
@@ -10,46 +10,25 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "address": {
-      "type": "richtext",
-      "private": false,
-      "required": true
-    },
-    "detail": {
-      "type": "richtext",
+      "type": "text",
       "required": true
     },
     "phone_number": {
-      "required": true,
       "type": "integer"
-    },
-    "price": {
-      "type": "decimal"
-    },
-    "is_available": {
-      "type": "boolean",
-      "default": true,
-      "required": false
     },
     "ratings": {
       "type": "decimal",
       "default": 0
     },
-    "weight": {
-      "type": "decimal",
-      "required": true
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     },
-    "owner_user_id": {
-      "model": "insight-user"
-    },
-    "booking_user_id": {
-      "model": "insight-user"
-    },
-    "events": {
-      "collection": "event"
+    "venue_courses": {
+      "collection": "venue-course"
     }
   }
 }

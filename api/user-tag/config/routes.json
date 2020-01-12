@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-tags",
+      "handler": "user-tag.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-tags/count",
+      "handler": "user-tag.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-tags/:id",
+      "handler": "user-tag.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-tags",
+      "handler": "user-tag.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-tags/:id",
+      "handler": "user-tag.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-tags/:id",
+      "handler": "user-tag.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

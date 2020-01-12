@@ -2,28 +2,28 @@
   "connection": "default",
   "collectionName": "activities",
   "info": {
-    "name": "activity"
+    "name": "Activity"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "total_sessions": {
-      "type": "integer",
-      "default": 0
+    "start_time": {
+      "type": "string",
+      "required": true
     },
-    "mindful_minute": {
-      "type": "decimal",
-      "default": 0
+    "end_time": {
+      "type": "string",
+      "required": true
     },
-    "longest_streak": {
-      "type": "decimal",
-      "default": 0
+    "duration": {
+      "type": "string",
+      "required": true
     },
-    "insight_user_id": {
-      "via": "activity_id",
-      "model": "insight-user"
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

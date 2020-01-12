@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "pictures",
+  "info": {
+    "name": "picture"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image_link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

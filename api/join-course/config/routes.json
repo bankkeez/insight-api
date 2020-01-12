@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/join-courses",
+      "handler": "join-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/join-courses/count",
+      "handler": "join-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/join-courses/:id",
+      "handler": "join-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/join-courses",
+      "handler": "join-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/join-courses/:id",
+      "handler": "join-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/join-courses/:id",
+      "handler": "join-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

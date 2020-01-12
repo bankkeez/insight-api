@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/venue-courses",
+      "handler": "venue-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/venue-courses/count",
+      "handler": "venue-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/venue-courses/:id",
+      "handler": "venue-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/venue-courses",
+      "handler": "venue-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/venue-courses/:id",
+      "handler": "venue-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/venue-courses/:id",
+      "handler": "venue-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

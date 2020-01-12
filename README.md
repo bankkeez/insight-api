@@ -1,28 +1,30 @@
 # Insight API
 
-A repository for Insight API.
+An API for Insight application.
 
 ## Prerequisites
 
-- Node version 10 or above
+- Node JS version 10 or above
 
 ## Installation
 
-1. Move into the cloned repository and install node modules.
+1. Install node modules after the repository is cloned.
 
 ```
-    $ cd insight-api
     $ npm install
 ```
 
-## Run Locally
+## Run the application
 
-1. Run the command.
+1. Start the development server.
 
 ```
-    $ strapi start
+    $ starpi develop
 ```
+- Link to manage the API: http://localhost:1337/admin
+- Link to access the server: http://localhost:1337 
+- To stop the server press Ctrl+C.
 
-- The application is located at: http://localhost:1337/admin
-- Press Ctrl+C to terminate the server
+## Developer
 
+- Piyawat Setthitikun

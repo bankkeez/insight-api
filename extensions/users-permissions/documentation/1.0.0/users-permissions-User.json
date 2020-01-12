@@ -1188,7 +1188,12 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname",
+          "phone_number",
+          "date_of_birth",
+          "priority"
         ],
         "properties": {
           "id": {
@@ -1244,13 +1249,169 @@
                 }
               }
             }
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "integer"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "is_receiving_news": {
+            "type": "boolean",
+            "default": true
+          },
+          "priority": {
+            "type": "integer",
+            "default": 1
+          },
+          "reminders": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "is_activated": {
+                "type": "boolean"
+              },
+              "time": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              }
+            }
+          },
+          "user_tags": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number"
+              },
+              "tag_id": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              }
+            }
+          },
+          "activities": {
+            "required": [
+              "id",
+              "start_time",
+              "end_time",
+              "duration"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "start_time": {
+                "type": "string"
+              },
+              "end_time": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              }
+            }
+          },
+          "venues": {
+            "required": [
+              "id",
+              "address"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "phone_number": {
+                "type": "integer"
+              },
+              "ratings": {
+                "type": "number"
+              },
+              "user_id": {
+                "type": "string"
+              },
+              "venue_courses": {
+                "type": "string"
+              }
+            }
+          },
+          "profile_picture": {
+            "required": [
+              "id",
+              "image_link"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "image_link": {
+                "type": "string"
+              }
+            }
+          },
+          "join_courses": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "string"
+              },
+              "course_id": {
+                "type": "string"
+              }
+            }
           }
         }
       },
       "NewUsers-PermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "firstname",
+          "lastname",
+          "phone_number",
+          "date_of_birth",
+          "priority"
         ],
         "properties": {
           "username": {
@@ -1280,6 +1441,47 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "integer"
+          },
+          "date_of_birth": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "is_receiving_news": {
+            "type": "boolean",
+            "default": true
+          },
+          "priority": {
+            "type": "integer",
+            "default": 1
+          },
+          "reminders": {
+            "type": "string"
+          },
+          "user_tags": {
+            "type": "string"
+          },
+          "activities": {
+            "type": "string"
+          },
+          "venues": {
+            "type": "string"
+          },
+          "profile_picture": {
+            "type": "string"
+          },
+          "join_courses": {
             "type": "string"
           }
         }

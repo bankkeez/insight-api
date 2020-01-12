@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "venue_courses",
+  "info": {
+    "name": "venueCourse"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "venue_id": {
+      "model": "venue"
+    },
+    "course_id": {
+      "model": "course"
+    }
+  }
+}

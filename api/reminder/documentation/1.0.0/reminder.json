@@ -516,8 +516,7 @@
     "schemas": {
       "Reminder": {
         "required": [
-          "id",
-          "name"
+          "id"
         ],
         "properties": {
           "id": {
@@ -526,20 +525,23 @@
           "name": {
             "type": "string"
           },
-          "is_actived": {
+          "is_activated": {
             "type": "boolean",
             "default": true
           },
-          "insight_user_id": {
+          "time": {
+            "type": "string"
+          },
+          "user_id": {
             "required": [
               "id",
               "username",
-              "password",
+              "email",
               "firstname",
               "lastname",
-              "email",
               "phone_number",
-              "address"
+              "date_of_birth",
+              "priority"
             ],
             "properties": {
               "id": {
@@ -548,7 +550,25 @@
               "username": {
                 "type": "string"
               },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
               "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
                 "type": "string"
               },
               "firstname": {
@@ -557,60 +577,57 @@
               "lastname": {
                 "type": "string"
               },
-              "date_of_birth": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
               "phone_number": {
                 "type": "integer"
               },
-              "image_link": {
+              "date_of_birth": {
                 "type": "string"
               },
               "address": {
                 "type": "string"
               },
-              "role": {
+              "is_receiving_news": {
+                "type": "boolean"
+              },
+              "priority": {
                 "type": "integer"
+              },
+              "reminders": {
+                "type": "string"
+              },
+              "user_tags": {
+                "type": "string"
+              },
+              "activities": {
+                "type": "string"
               },
               "venues": {
                 "type": "string"
               },
-              "activity_id": {
+              "profile_picture": {
                 "type": "string"
               },
-              "playlists": {
-                "type": "string"
-              },
-              "reminders": {
+              "join_courses": {
                 "type": "string"
               }
             }
-          },
-          "time": {
-            "type": "number"
           }
         }
       },
       "NewReminder": {
-        "required": [
-          "name"
-        ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "is_actived": {
+          "is_activated": {
             "type": "boolean",
             "default": true
           },
-          "insight_user_id": {
+          "time": {
             "type": "string"
           },
-          "time": {
-            "type": "number"
+          "user_id": {
+            "type": "string"
           }
         }
       }

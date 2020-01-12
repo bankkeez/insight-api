@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "reminders",
   "info": {
-    "name": "reminder"
+    "name": "Reminder"
   },
   "options": {
     "increments": true,
@@ -10,19 +10,18 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "string"
     },
-    "is_actived": {
+    "is_activated": {
       "type": "boolean",
       "default": true
     },
-    "insight_user_id": {
-      "model": "insight-user"
-    },
     "time": {
-      "type": "decimal"
+      "type": "string"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

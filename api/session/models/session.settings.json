@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "sessions",
+  "info": {
+    "name": "session"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "video_link": {
+      "type": "string"
+    },
+    "audio_link": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "required": false
+    },
+    "endtime": {
+      "type": "string"
+    },
+    "is_offline": {
+      "type": "boolean",
+      "default": true
+    },
+    "cover_pictures": {
+      "collection": "picture"
+    },
+    "course_id": {
+      "model": "course"
+    }
+  }
+}

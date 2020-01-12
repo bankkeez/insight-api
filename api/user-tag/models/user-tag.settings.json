@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "user_tags",
+  "info": {
+    "name": "UserTag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "weight": {
+      "type": "decimal"
+    },
+    "tag_id": {
+      "model": "tag"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

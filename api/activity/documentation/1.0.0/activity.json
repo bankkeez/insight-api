@@ -516,34 +516,34 @@
     "schemas": {
       "Activity": {
         "required": [
-          "id"
+          "id",
+          "start_time",
+          "end_time",
+          "duration"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "total_sessions": {
-            "type": "integer",
-            "default": 0
+          "start_time": {
+            "type": "string"
           },
-          "mindful_minute": {
-            "type": "number",
-            "default": 0
+          "end_time": {
+            "type": "string"
           },
-          "longest_streak": {
-            "type": "number",
-            "default": 0
+          "duration": {
+            "type": "string"
           },
-          "insight_user_id": {
+          "user_id": {
             "required": [
               "id",
               "username",
-              "password",
+              "email",
               "firstname",
               "lastname",
-              "email",
               "phone_number",
-              "address"
+              "date_of_birth",
+              "priority"
             ],
             "properties": {
               "id": {
@@ -552,7 +552,25 @@
               "username": {
                 "type": "string"
               },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
               "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
                 "type": "string"
               },
               "firstname": {
@@ -561,34 +579,37 @@
               "lastname": {
                 "type": "string"
               },
-              "date_of_birth": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
               "phone_number": {
                 "type": "integer"
               },
-              "image_link": {
+              "date_of_birth": {
                 "type": "string"
               },
               "address": {
                 "type": "string"
               },
-              "role": {
+              "is_receiving_news": {
+                "type": "boolean"
+              },
+              "priority": {
                 "type": "integer"
+              },
+              "reminders": {
+                "type": "string"
+              },
+              "user_tags": {
+                "type": "string"
+              },
+              "activities": {
+                "type": "string"
               },
               "venues": {
                 "type": "string"
               },
-              "activity_id": {
+              "profile_picture": {
                 "type": "string"
               },
-              "playlists": {
-                "type": "string"
-              },
-              "reminders": {
+              "join_courses": {
                 "type": "string"
               }
             }
@@ -596,20 +617,22 @@
         }
       },
       "NewActivity": {
+        "required": [
+          "start_time",
+          "end_time",
+          "duration"
+        ],
         "properties": {
-          "total_sessions": {
-            "type": "integer",
-            "default": 0
+          "start_time": {
+            "type": "string"
           },
-          "mindful_minute": {
-            "type": "number",
-            "default": 0
+          "end_time": {
+            "type": "string"
           },
-          "longest_streak": {
-            "type": "number",
-            "default": 0
+          "duration": {
+            "type": "string"
           },
-          "insight_user_id": {
+          "user_id": {
             "type": "string"
           }
         }

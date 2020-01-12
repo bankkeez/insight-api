@@ -517,11 +517,7 @@
       "Venue": {
         "required": [
           "id",
-          "name",
-          "address",
-          "detail",
-          "phone_number",
-          "weight"
+          "address"
         ],
         "properties": {
           "id": {
@@ -533,36 +529,23 @@
           "address": {
             "type": "string"
           },
-          "detail": {
-            "type": "string"
-          },
           "phone_number": {
             "type": "integer"
-          },
-          "price": {
-            "type": "number"
-          },
-          "is_available": {
-            "type": "boolean",
-            "default": true
           },
           "ratings": {
             "type": "number",
             "default": 0
           },
-          "weight": {
-            "type": "number"
-          },
-          "owner_user_id": {
+          "user_id": {
             "required": [
               "id",
               "username",
-              "password",
+              "email",
               "firstname",
               "lastname",
-              "email",
               "phone_number",
-              "address"
+              "date_of_birth",
+              "priority"
             ],
             "properties": {
               "id": {
@@ -571,7 +554,25 @@
               "username": {
                 "type": "string"
               },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
               "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
                 "type": "string"
               },
               "firstname": {
@@ -580,123 +581,53 @@
               "lastname": {
                 "type": "string"
               },
-              "date_of_birth": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
               "phone_number": {
                 "type": "integer"
               },
-              "image_link": {
+              "date_of_birth": {
                 "type": "string"
               },
               "address": {
                 "type": "string"
               },
-              "role": {
+              "is_receiving_news": {
+                "type": "boolean"
+              },
+              "priority": {
                 "type": "integer"
+              },
+              "reminders": {
+                "type": "string"
+              },
+              "user_tags": {
+                "type": "string"
+              },
+              "activities": {
+                "type": "string"
               },
               "venues": {
                 "type": "string"
               },
-              "activity_id": {
+              "profile_picture": {
                 "type": "string"
               },
-              "playlists": {
-                "type": "string"
-              },
-              "reminders": {
+              "join_courses": {
                 "type": "string"
               }
             }
           },
-          "booking_user_id": {
+          "venue_courses": {
             "required": [
-              "id",
-              "username",
-              "password",
-              "firstname",
-              "lastname",
-              "email",
-              "phone_number",
-              "address"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "firstname": {
-                "type": "string"
-              },
-              "lastname": {
-                "type": "string"
-              },
-              "date_of_birth": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "phone_number": {
-                "type": "integer"
-              },
-              "image_link": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "role": {
-                "type": "integer"
-              },
-              "venues": {
-                "type": "string"
-              },
-              "activity_id": {
-                "type": "string"
-              },
-              "playlists": {
-                "type": "string"
-              },
-              "reminders": {
-                "type": "string"
-              }
-            }
-          },
-          "events": {
-            "required": [
-              "id",
-              "name",
-              "max_participant"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "time": {
-                "type": "time"
-              },
-              "detail": {
-                "type": "string"
-              },
-              "max_participant": {
-                "type": "integer"
-              },
-              "current_participant": {
-                "type": "integer"
               },
               "venue_id": {
+                "type": "string"
+              },
+              "course_id": {
                 "type": "string"
               }
             }
@@ -705,11 +636,7 @@
       },
       "NewVenue": {
         "required": [
-          "name",
-          "address",
-          "detail",
-          "phone_number",
-          "weight"
+          "address"
         ],
         "properties": {
           "name": {
@@ -718,33 +645,17 @@
           "address": {
             "type": "string"
           },
-          "detail": {
-            "type": "string"
-          },
           "phone_number": {
             "type": "integer"
-          },
-          "price": {
-            "type": "number"
-          },
-          "is_available": {
-            "type": "boolean",
-            "default": true
           },
           "ratings": {
             "type": "number",
             "default": 0
           },
-          "weight": {
-            "type": "number"
-          },
-          "owner_user_id": {
+          "user_id": {
             "type": "string"
           },
-          "booking_user_id": {
-            "type": "string"
-          },
-          "events": {
+          "venue_courses": {
             "type": "string"
           }
         }
