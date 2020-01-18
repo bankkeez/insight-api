@@ -19,7 +19,7 @@ An API for Insight application.
 1. Start the development server.
 
 ```
-    $ starpi develop
+    $ strapi develop
 ```
 - Link to manage the API: http://localhost:1337/admin
 - Link to access the server: http://localhost:1337 
